@@ -1,0 +1,41 @@
+.parent{
+  width:500px;
+  height: 500px;
+  background-color: rgb(99, 233, 233);
+}
+
+
+.child{
+  width:50%;
+  height: 50%;
+  background-color: rgb(255, 72, 0);
+}
+
+
+.parent:hover .child{
+  /* transform: translate(100%) */
+  animation: move-right infinite 3s linear;
+}
+
+
+@keyframes move-right {
+  0%{
+    transform: translateX(0%);
+    background-color: rgb(93, 190, 243)
+  }
+  25%{
+    transform: translateY(100%) scale(2,2)
+    
+  }
+  50%{
+    transform: translate(100%, 100%);
+    background-color: rgba(235, 229, 113, 0.881)
+  }
+  75%{
+    transform: translate(100%, 0%)
+  }
+  100%{
+    transform: translate(0%, 0%);
+    background-color: green
+  }
+}
