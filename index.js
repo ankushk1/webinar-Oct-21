@@ -142,8 +142,8 @@
 // console.log(car.trim())
 
 //String split
-let myStr = "Hey, my name?is ABC, I am 20 years old"
-console.log(myStr.split(",")[1].split("?")[0].trimStart());
+// let myStr = "Hey, my name?is ABC, I am 20 years old"
+// console.log(myStr.split(",")[1].split("?")[0].trimStart());
 
 // arr = [1,2,3]
 // console.log(arr[0])
@@ -151,3 +151,33 @@ console.log(myStr.split(",")[1].split("?")[0].trimStart());
 // Explore on your own
 //padStart 
 //padEnd
+
+const arr2 = ["A", "B", "C"]
+console.log(arr.length)
+const arr3 = arr.concat(arr2)
+console.log(arr3);
+
+//To add at last position
+arr.push("FERRARI")
+console.log(arr)
+
+//To remove from last position
+arr.pop()
+console.log(arr)
+
+//To add at first position
+arr.unshift("MERC")
+console.log(arr)
+
+//To remove from first position
+arr.shift()
+console.log(arr)
+
+
+const numArr = [1,2,3,4,5,6,7]
+const newNumArr = numArr.map(elem => elem+2)
+console.log(newNumArr)
+
+
+const newFilterArr = numArr.filter(elem => elem%2== 0)
+console.log(newFilterArr)
