@@ -152,32 +152,82 @@
 //padStart 
 //padEnd
 
-const arr2 = ["A", "B", "C"]
-console.log(arr.length)
-const arr3 = arr.concat(arr2)
-console.log(arr3);
+// const arr2 = ["A", "B", "C"]
+// console.log(arr.length)
+// const arr3 = arr.concat(arr2)
+// console.log(arr3);
 
-//To add at last position
-arr.push("FERRARI")
-console.log(arr)
+// //To add at last position
+// arr.push("FERRARI")
+// console.log(arr)
 
-//To remove from last position
-arr.pop()
-console.log(arr)
+// //To remove from last position
+// arr.pop()
+// console.log(arr)
 
-//To add at first position
-arr.unshift("MERC")
-console.log(arr)
+// //To add at first position
+// arr.unshift("MERC")
+// console.log(arr)
 
-//To remove from first position
-arr.shift()
-console.log(arr)
-
-
-const numArr = [1,2,3,4,5,6,7]
-const newNumArr = numArr.map(elem => elem+2)
-console.log(newNumArr)
+// //To remove from first position
+// arr.shift()
+// console.log(arr)
 
 
-const newFilterArr = numArr.filter(elem => elem%2== 0)
-console.log(newFilterArr)
+// const numArr = [1,2,3,4,5,6,7]
+// const newNumArr = numArr.map(elem => elem+2)
+// console.log(newNumArr)
+
+
+// const newFilterArr = numArr.filter(elem => elem%2== 0)
+// console.log(newFilterArr)
+
+
+const ages = [12, 33, 16, 40];
+
+console.log(ages);
+console.log(ages.valueOf());
+
+console.log(ages.every((age) => age > 18));
+
+console.log(ages.some((age) => age > 18));
+
+console.log(ages.filter((age) => age> 12));
+console.log(ages.find((age) => age >12));
+console.log(ages.findIndex((age) => age === 33));
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Mango", "Apple"];
+let index = fruits.indexOf("Apple",2);
+console.log(index)
+
+
+function test(name, number) {
+  console.log(`Function called ${name} ${number}`);
+}
+
+var test2 = function () {
+  console.log("Function2 called");
+};
+
+var test3 = () => {
+  console.log("Function3 called");
+};
+
+test("XYZ", 10);
+test2();
+test3();
+
+const userDetails = (name, ...argumnets) => {
+  const [num1] = argumnets;
+  console.log(num1);
+  // console.log(age ? age : '')
+};
+
+userDetails("Amarnath", 10, 20, 30, "x", "y");
+
+const x = (function sum(a, b) {
+  return a + b;
+})(1, 2);
+
+console.log(x);
