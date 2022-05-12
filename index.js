@@ -112,6 +112,8 @@
 // }
 
 
+
+//JS Strings
 // let username = "Yashaswi"
 
 // console.log(username.length)
@@ -152,6 +154,9 @@
 //padStart 
 //padEnd
 
+
+
+//JS Arrays
 // const arr2 = ["A", "B", "C"]
 // console.log(arr.length)
 // const arr3 = arr.concat(arr2)
@@ -183,51 +188,122 @@
 // console.log(newFilterArr)
 
 
-const ages = [12, 33, 16, 40];
+// const ages = [12, 33, 16, 40];
 
-console.log(ages);
-console.log(ages.valueOf());
+// console.log(ages);
+// console.log(ages.valueOf());
 
-console.log(ages.every((age) => age > 18));
+// console.log(ages.every((age) => age > 18));
 
-console.log(ages.some((age) => age > 18));
+// console.log(ages.some((age) => age > 18));
 
-console.log(ages.filter((age) => age> 12));
-console.log(ages.find((age) => age >12));
-console.log(ages.findIndex((age) => age === 33));
-
-
-const fruits = ["Banana", "Orange", "Apple", "Mango", "Mango", "Apple"];
-let index = fruits.indexOf("Apple",2);
-console.log(index)
+// console.log(ages.filter((age) => age> 12));
+// console.log(ages.find((age) => age >12));
+// console.log(ages.findIndex((age) => age === 33));
 
 
-function test(name, number) {
-  console.log(`Function called ${name} ${number}`);
-}
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Mango", "Apple"];
+// let index = fruits.indexOf("Apple",2);
+// console.log(index)
 
-var test2 = function () {
-  console.log("Function2 called");
-};
 
-var test3 = () => {
-  console.log("Function3 called");
-};
 
-test("XYZ", 10);
-test2();
-test3();
 
-const userDetails = (name, ...argumnets) => {
-  const [num1] = argumnets;
-  console.log(num1);
-  // console.log(age ? age : '')
-};
+//JS Functions
+// function test(name, number) {
+//   console.log(`Function called ${name} ${number}`);
+// }
 
-userDetails("Amarnath", 10, 20, 30, "x", "y");
+// var test2 = function () {
+//   console.log("Function2 called");
+// };
 
-const x = (function sum(a, b) {
-  return a + b;
-})(1, 2);
+// var test3 = () => {
+//   console.log("Function3 called");
+// };
 
-console.log(x);
+// test("XYZ", 10);
+// test2();
+// test3();
+
+// const userDetails = (name, ...argumnets) => {
+//   const [num1] = argumnets;
+//   console.log(num1);
+//   // console.log(age ? age : '')
+// };
+
+// userDetails("Amarnath", 10, 20, 30, "x", "y");
+
+// (function (a, b) {
+//   console.log(console.log(a+b))
+// })(1, 2);
+
+// console.log(
+//   (function (a, b) {
+//     return a + b;
+//   })(1, 2)
+// );
+
+// console.log(
+//   ((a, b) => {
+//     return a + b;
+//   })(1, 2)
+// );
+
+// // function abc(num1 , num2, ...params) {
+//   console.log(num1, num2)
+//   console.log(arguments[1])
+//   console.log(params)
+// }
+// console.log(abc(1,2,3,4,5,6,7))
+
+// const f1 = (a, b = null) => {
+//   if(!b) {
+//     return a
+//   }
+//   return a + b;
+// };
+
+// console.log(f1(1));
+
+
+
+
+
+//JS Objects
+// const obj = {
+//   user: "ABC",
+//   age: 18,
+//   isTrue: true,
+//   userInfo : function (name) {
+//     return this.isTrue ? `hey ${this.user} ${this.age}` : "Not true"
+//   }
+// };
+
+// obj.city = "Delhi"
+// // obj.age = 20
+
+// console.log(obj)
+
+// // console.log(obj["user name"]);
+// // console.log(obj.age);
+// // console.log(obj["age"]);
+// console.log(obj.userInfo("AMAN"))
+
+
+// const obj2 = Object.create(obj)
+// obj2.user = "XYZ"
+// // obj2.age = 11
+// console.log(obj2.userInfo())
+
+
+// console.log(Object.keys(obj))
+// console.log(Object.values(obj))
+
+// const entries = Object.entries(obj)
+// console.log(entries)
+
+// entries.forEach(entry => {
+//   console.log(entry[0])
+//   console.log(entry[1])
+// })
