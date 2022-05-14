@@ -270,7 +270,7 @@
 
 
 
-//JS Objects
+// JS Objects
 // const obj = {
 //   user: "ABC",
 //   age: 18,
@@ -285,9 +285,9 @@
 
 // console.log(obj)
 
-// // console.log(obj["user name"]);
-// // console.log(obj.age);
-// // console.log(obj["age"]);
+// console.log(obj["user name"]);
+// console.log(obj.age);
+// console.log(obj["age"]);
 // console.log(obj.userInfo("AMAN"))
 
 
@@ -307,3 +307,99 @@
 //   console.log(entry[0])
 //   console.log(entry[1])
 // })
+
+
+// const obj = {
+//   user: "ABC",
+//   age: 18,
+//   userInfo: function () {
+//     return  `${this.user} age is ${this.age} ` 
+//   }
+// };
+
+// const obj2 = {
+//   name:"XYZ",
+//   age:10
+// }
+
+// const bindFunc = obj.userInfo.bind(obj2)
+// console.log(typeof(bindFunc))
+
+
+
+// const obj2 = {
+//   user:"XYZ",
+//   age:10
+// }
+
+// const obj3 = {
+//   user:"SAM",
+//   age:14
+// }
+
+// const bindFunc = obj.userInfo.bind(obj2)
+// // const bindFunc2 = obj.userInfo.bind(obj3)
+// console.log(bindFunc("gurugram", "haryana"))
+// console.log(bindFunc("Delhi", "Delhi"))
+
+// //Function borrowing
+// console.log(obj.userInfo.call(obj, "gurugram", "haryana"))
+// console.log(obj.userInfo.apply(obj, ["gurugram", "haryana"]))
+
+//This method freezes the object. You cannot add anything nor update the object
+// Object.freeze(obj)
+
+//This method seals the object. You cannot add anything but can update the object
+// Object.seal(obj)
+
+// obj.user = "XYZ"
+// obj.address = "Delhi"
+
+// console.log(obj);
+
+// const obj = {
+//   user: "ABC",
+//   age: 18,
+//   userInfo: function (city,state) {
+//     return  `${this.user} age is ${this.age} lives in ${city},${state}` 
+//   }
+// };
+
+
+// const obj2 = {
+//   user:"XYZ",
+//   age:10,
+//   city: "Delhi",
+// }
+
+// obj2.age = 35
+// obj2.city = "Mumbai"
+// console.log(obj2)
+
+// const obj3 = {...obj2, age:30}
+// console.log(obj3)
+
+// const arr = [1,2,3,4,5,6]
+// const arr2 = [4,5,6]
+
+// // console.log(...arr, ...arr2)
+// // const a = [...arr, ...arr2]
+// // console.log((a));
+
+
+// const [num1, num3, num2, ...nums] = arr
+// console.log(num1 + num2 + num3);
+// console.log(nums)
+
+
+// const obj2 = {
+//   user:"XYZ",
+//   age:10,
+//   city: "Delhi",
+// }
+
+// const {user, city, age} = obj2
+
+// console.log(user, age, city)
+
+// console.log(user)
