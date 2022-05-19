@@ -403,3 +403,42 @@
 // console.log(user, age, city)
 
 // console.log(user)
+
+
+const arr = [1, 2, 3];
+arr.forEach(obj => console.log(obj))
+
+const data = [
+  {
+    user: "user 1",
+    userHobbies: ["Sing", "cricket", "travelling"],
+    address: {
+      houseNumber: "12",
+      city: "Delhi",
+      state: "Delhi"
+    }
+  },
+  {
+    user: "user 2",
+    userHobbies: ["cricket", "travelling"],
+    address: {
+      houseNumber: "22",
+      city: "Mumbai",
+      state: "Maharashtra"
+    }
+  },
+  {
+    user: "user 3",
+    userHobbies: ["dance", "football"],
+    address: {
+      houseNumber: "22",
+      city: "Mumbai",
+      state: "Maharashtra"
+    }
+  }
+];
+
+console.log(data[0].userHobbies.includes("Sing"))
+
+const objdata = data.filter(obj => obj.userHobbies.includes("Sing"))
+console.log(objdata)
