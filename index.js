@@ -2,6 +2,7 @@
 // var age = 10;
 // var bool = true;
 
+
 // console.log(username, age, bool)
 
 // var personName = 'ABC';
@@ -99,7 +100,6 @@
 //   break;
 // }
 
-
 // var x = 4
 
 // while(x > 0){
@@ -110,8 +110,6 @@
 // for(const i = 0; i < 4 ; i++){
 //   console.log(i)
 // }
-
-
 
 //JS Strings
 // let username = "Yashaswi"
@@ -124,11 +122,9 @@
 //With only one param
 // console.log(username.substring(3))
 
-
 // let str = "hello, I am saying hello, Hello"
 
 // console.log(str.toLowerCase().replaceAll("hello", "hey"))
-
 
 // let person = "Sam"
 // // console.log(person.toUpperCase())
@@ -136,7 +132,6 @@
 // // For concatination of Strings
 // console.log(person.concat(" says ",person))
 // console.log(person + " says " + str)
-
 
 //Trim method
 
@@ -151,10 +146,8 @@
 // console.log(arr[0])
 
 // Explore on your own
-//padStart 
+//padStart
 //padEnd
-
-
 
 //JS Arrays
 // const arr2 = ["A", "B", "C"]
@@ -178,15 +171,12 @@
 // arr.shift()
 // console.log(arr)
 
-
 // const numArr = [1,2,3,4,5,6,7]
 // const newNumArr = numArr.map(elem => elem+2)
 // console.log(newNumArr)
 
-
 // const newFilterArr = numArr.filter(elem => elem%2== 0)
 // console.log(newFilterArr)
-
 
 // const ages = [12, 33, 16, 40];
 
@@ -201,13 +191,9 @@
 // console.log(ages.find((age) => age >12));
 // console.log(ages.findIndex((age) => age === 33));
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango", "Mango", "Apple"];
 // let index = fruits.indexOf("Apple",2);
 // console.log(index)
-
-
-
 
 //JS Functions
 // function test(name, number) {
@@ -266,10 +252,6 @@
 
 // console.log(f1(1));
 
-
-
-
-
 // JS Objects
 // const obj = {
 //   user: "ABC",
@@ -290,12 +272,10 @@
 // console.log(obj["age"]);
 // console.log(obj.userInfo("AMAN"))
 
-
 // const obj2 = Object.create(obj)
 // obj2.user = "XYZ"
 // // obj2.age = 11
 // console.log(obj2.userInfo())
-
 
 // console.log(Object.keys(obj))
 // console.log(Object.values(obj))
@@ -308,12 +288,11 @@
 //   console.log(entry[1])
 // })
 
-
 // const obj = {
 //   user: "ABC",
 //   age: 18,
 //   userInfo: function () {
-//     return  `${this.user} age is ${this.age} ` 
+//     return  `${this.user} age is ${this.age} `
 //   }
 // };
 
@@ -324,8 +303,6 @@
 
 // const bindFunc = obj.userInfo.bind(obj2)
 // console.log(typeof(bindFunc))
-
-
 
 // const obj2 = {
 //   user:"XYZ",
@@ -361,10 +338,9 @@
 //   user: "ABC",
 //   age: 18,
 //   userInfo: function (city,state) {
-//     return  `${this.user} age is ${this.age} lives in ${city},${state}` 
+//     return  `${this.user} age is ${this.age} lives in ${city},${state}`
 //   }
 // };
-
 
 // const obj2 = {
 //   user:"XYZ",
@@ -386,11 +362,9 @@
 // // const a = [...arr, ...arr2]
 // // console.log((a));
 
-
 // const [num1, num3, num2, ...nums] = arr
 // console.log(num1 + num2 + num3);
 // console.log(nums)
-
 
 // const obj2 = {
 //   user:"XYZ",
@@ -404,41 +378,303 @@
 
 // console.log(user)
 
+// const arr = [1, 2, 3];
+// arr.forEach(obj => console.log(obj))
 
-const arr = [1, 2, 3];
-arr.forEach(obj => console.log(obj))
+// const data = [
+//   {
+//     user: "user 1",
+//     userHobbies: ["Sing", "cricket", "travelling"],
+//     address: {
+//       houseNumber: "12",
+//       city: "Delhi",
+//       state: "Delhi"
+//     }
+//   },
+//   {
+//     user: "user 2",
+//     userHobbies: ["cricket", "travelling"],
+//     address: {
+//       houseNumber: "22",
+//       city: "Mumbai",
+//       state: "Maharashtra"
+//     }
+//   },
+//   {
+//     user: "user 3",
+//     userHobbies: ["dance", "football"],
+//     address: {
+//       houseNumber: "22",
+//       city: "Mumbai",
+//       state: "Maharashtra"
+//     }
+//   }
+// ];
 
-const data = [
-  {
-    user: "user 1",
-    userHobbies: ["Sing", "cricket", "travelling"],
-    address: {
-      houseNumber: "12",
-      city: "Delhi",
-      state: "Delhi"
-    }
-  },
-  {
-    user: "user 2",
-    userHobbies: ["cricket", "travelling"],
-    address: {
-      houseNumber: "22",
-      city: "Mumbai",
-      state: "Maharashtra"
-    }
-  },
-  {
-    user: "user 3",
-    userHobbies: ["dance", "football"],
-    address: {
-      houseNumber: "22",
-      city: "Mumbai",
-      state: "Maharashtra"
-    }
-  }
-];
+// console.log(data[0].userHobbies.includes("Sing"))
 
-console.log(data[0].userHobbies.includes("Sing"))
+// const objdata = data.filter(obj => obj.userHobbies.includes("Sing"))
+// console.log(objdata)
 
-const objdata = data.filter(obj => obj.userHobbies.includes("Sing"))
-console.log(objdata)
+// function hello(callback) {
+//   setTimeout(() =>{
+//     console.log('hello')
+//     // callback()
+//   }, 3000)
+// }
+
+// function hey(){
+//   console.log('hey')
+// }
+
+// // hello()
+// // hey()
+
+// function isOdd(num) {
+//   return num%2 !=0
+// }
+
+// function filter(numbers, callback){
+//   let results = [];
+
+//   results = numbers.filter(num => callback(num))
+
+//   console.log(results)
+//   console.log('result added')
+//   return results
+// }
+
+// var arr = [1,2,3,4,5,6,7]
+// // console.log(arr.filter(num => num%2 != 0 ))
+
+// // filter(arr, isOdd)
+
+// // for(var i = 0; i < arr.length; i++){
+// //   console.log(i)
+// //   console.log(arr[i])
+// // }
+
+// arr.forEach( (num, index) => {
+//   console.log(num + " at index "+ index)
+// })
+
+// var name = "abc"
+
+// const  test = (callback) => {
+//   // console.log(name)
+//   callback(name)
+// }
+
+// const log = (name) => {
+//   console.log('log function called', name)
+// }
+
+// test(log)
+
+// const outer = () => {
+//   var a = "a";
+//   const inner = () => {
+//     console.log(a);
+//     const b = "b"
+//     const innerinner = () => {
+//       console.log(b, a)
+//     }
+//     return innerinner
+//   }
+//   return inner;
+// }
+
+// // const res = outer()
+// // console.log(res())
+
+// const res2 = outer()()()
+// res2
+
+// for(let i = 0 ; i< 3 ; i++) {
+
+//   setTimeout(function() {
+//     console.log(i)
+//   }, 1000)
+// }
+
+// function makeArmy() {
+//   let shooters = [];
+//   // let i = 0;
+//   for (let i = 0 ; i< 10 ; i++) {
+//       let shooter = function() {
+//           console.log(i);
+//       }
+//       shooters.push(shooter);
+//       //console.log(shooter);
+//   }
+//   //console.log(shooters);
+//   return shooters;
+// }
+
+// let army = makeArmy();
+// console.log(army);
+// army[0](); // 10
+// army[5]();
+// army[9]();
+
+// const p = new Promise((resolve, reject) => {
+//   let x = 3
+//   if(x == 2) {
+//     resolve('Success')
+//   } else{
+//     reject('Failure')
+//   }
+// })
+
+// function result() {
+//   const p = new Promise((resolve, reject) => {
+//     let x = 3;
+//     if (x == 2) {
+//       resolve("Success");
+//     } else {
+//       reject("Failure");
+//     }
+//   });
+
+//   return p;
+// }
+
+// console.log('promise called')
+// p.then((message) => {
+//   console.log(message)
+// })
+// .catch((err) => {
+//   console.log(err)
+// })
+
+// const promiseCall = async () => {
+//  try{
+//   const res = await result();
+//   console.log(res);
+//   console.log("promise called");
+//   return res;
+//  } catch(err) {
+//    console.log(err)
+//  }
+// };
+
+// promiseCall();
+
+// const p = Promise.resolve(3)
+// const q = Promise.reject(0)
+
+// p.then(message => console.log(message))
+
+// get Call
+// const res = fetch('https://jsonplaceholder.typicode.com/todos/1')
+// // const res = fetch("https://jsonplaceholder.typicode.com/posts");
+// res.then((response) => response.json()).then((json) => console.log(json));
+
+//Create call
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   body: JSON.stringify({
+//     title: "ABCD",
+//     body: "bar",
+//     userId: 1
+//   }),
+//   headers: {
+//     "Content-type": "application/json; charset=UTF-8"
+//   }
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+// //update call
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1", {
+//   method: "PUT",
+//   body: JSON.stringify({
+//     id: 1,
+//     title: "ABCD",
+//     body: "bar",
+//     userId: 1
+//   }),
+//   headers: {
+//     "Content-type": "application/json; charset=UTF-8"
+//   }
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+// //Delete call
+// fetch("https://jsonplaceholder.typicode.com/posts/1", {
+//   method: "DELETE"
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+
+
+// const user = {
+//   name: "ABC",
+//   age: 20
+// }
+
+// const arr = [1,2,3]
+
+
+// localStorage.setItem("user" , JSON.stringify(user))
+// localStorage.setItem("username" , user.name)
+
+// console.log(JSON.parse(localStorage.getItem("user")).name)
+// // localStorage.removeItem("user")
+
+
+// // localStorage.clear()
+
+
+
+// sessionStorage.setItem("user" , JSON.stringify(user))
+
+// import * as imprts from './js/subFolder/main.js'
+// import {age, name, user} from './js/subFolder/main.js'
+// import name2 from './js/subFolder/main.js'
+// console.log(imprts)
+// console.log(imprts.user.username)
+
+// const {username} = user
+// console.log(username);
+
+// console.log(sum(user.username))
+
+// console.dir(document)
+// // console.dir(document.body)
+
+
+// console.log(window)
+
+
+//Aside from getElementById, all the other methods return an array
+// of elements
+
+// const h1 = document.getElementById('h1');
+// console.log(h1)
+// const classh1 = document.getElementsByClassName('c-h1')
+// console.dir(classh1);
+
+// classh1[0].innerHTML = "HEY"
+
+
+// const tahH1 = document.getElementsByName('name-h1')
+// console.dir(tahH1)
+
+
+const h1 = document.querySelector('#h1')
+console.dir(h1)
+
+const ch1 = document.querySelectorAll('.c-h1')
+console.dir(ch1)
+
+const tagh1 = document.querySelectorAll('h1')
+console.dir(tagh1)
+
+const nameh1 = document.querySelectorAll('[type=text]')
+nameh1[0].value = 'ABC'
+nameh1[0].placeholder = 'NAME'
+console.dir(nameh1)
