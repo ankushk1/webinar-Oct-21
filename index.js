@@ -2,7 +2,6 @@
 // var age = 10;
 // var bool = true;
 
-
 // console.log(username, age, bool)
 
 // var personName = 'ABC';
@@ -609,8 +608,6 @@
 //   .then((response) => response.json())
 //   .then((json) => console.log(json));
 
-
-
 // const user = {
 //   name: "ABC",
 //   age: 20
@@ -618,17 +615,13 @@
 
 // const arr = [1,2,3]
 
-
 // localStorage.setItem("user" , JSON.stringify(user))
 // localStorage.setItem("username" , user.name)
 
 // console.log(JSON.parse(localStorage.getItem("user")).name)
 // // localStorage.removeItem("user")
 
-
 // // localStorage.clear()
-
-
 
 // sessionStorage.setItem("user" , JSON.stringify(user))
 
@@ -646,9 +639,7 @@
 // console.dir(document)
 // // console.dir(document.body)
 
-
 // console.log(window)
-
 
 //Aside from getElementById, all the other methods return an array
 // of elements
@@ -660,21 +651,99 @@
 
 // classh1[0].innerHTML = "HEY"
 
-
 // const tahH1 = document.getElementsByName('name-h1')
 // console.dir(tahH1)
 
+// const h1 = document.querySelector('#h1')
+// console.dir(h1)
 
-const h1 = document.querySelector('#h1')
-console.dir(h1)
+// const ch1 = document.querySelectorAll('.c-h1')
+// console.dir(ch1)
 
-const ch1 = document.querySelectorAll('.c-h1')
-console.dir(ch1)
+// const tagh1 = document.querySelectorAll('h1')
+// console.dir(tagh1)
 
-const tagh1 = document.querySelectorAll('h1')
-console.dir(tagh1)
+// const nameh1 = document.querySelectorAll('[type=text]')
+// nameh1[0].value = 'ABC'
+// nameh1[0].placeholder = 'NAME'
+// console.dir(nameh1)
 
-const nameh1 = document.querySelectorAll('[type=text]')
-nameh1[0].value = 'ABC'
-nameh1[0].placeholder = 'NAME'
-console.dir(nameh1)
+// const h1 = document.querySelector('#h1')
+// console.dir(h1)
+// console.dir(h1.parentElement)
+// console.log(h1.parentNode)
+
+// const main  = document.querySelector('#main')
+// console.dir(main)
+
+// console.dir(main.children[0])
+// console.dir(main.children[main.children.length - 1])
+
+// const p = document.createElement('p')
+// p.className = "p p-text"
+// p.id = "p"
+// // p.innerText = "Paragraph"
+
+// p.innerHTML= `<div>
+// <div>Para</div>
+// </div>`
+
+// document.body.appendChild(p)
+// document.body.firstElementChild.innerHTML = `<div>
+//  <div class="p p-text">Para</div>
+//  </div>`
+
+// console.dir(p)
+// console.dir(document.body)
+
+
+// const para = document.createElement('p')
+// // console.dir(para)
+// // para.innerText = "Paragraph"
+// // para.innerHTML= `<div>
+// // <div>Paragraph</div>
+// // </div>`
+
+// document.body.append(para)
+
+
+const ul = document.querySelector('#ul-list')
+console.dir(ul)
+console.log(ul)
+
+const li = document.createElement('li')
+li.textContent = "New List Item"
+
+const li2 = document.createElement('li')
+li2.textContent = "New List Item2"
+//In append you can add both html elements and strings/text
+//In appendChild you can add only html elements
+// ul.appendChild('List item')
+// ul.append('List item', " ", "Hey")
+
+// ul.append(li)
+// ul.prepend(li2)
+
+// ul.firstElementChild.nextElementSibling.append(li)
+
+// ul.insertBefore(li, ul.lastElementChild.nextElementSibling)
+
+// ul.firstElementChild.after(li)
+// ul.firstElementChild.before(li)
+
+// console.log(ul.children[1].nextElementSibling);
+
+// ul.lastElementChild.previousElementSibling.before(li)
+
+
+
+//First param is element to replace and second param is the one to be replaced
+// ul.replaceChild(li, ul.firstElementChild)
+
+// ul.replaceChildren(li, li2)
+
+// ul.removeChild(ul.lastElementChild);
+
+let clone = ul.cloneNode(true)
+console.dir(clone)
+document.body.appendChild(clone)
